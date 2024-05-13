@@ -2,7 +2,7 @@ import java.util.*;
 public class PhoneBook{
 	public static void main(String... args){
 	Scanner scanner = new Scanner(System.in);
-	System.out.println("Welcome to My phone book");
+	System.out.print("Welcome to My phone book");
 	String prompt = "1. Add contact\n" +
                 "2. Remove contact\n" +
                 "3. Find contact by phone number\n" +
@@ -25,12 +25,12 @@ public class PhoneBook{
 			String userNumber = scanner.next();
 			contactName.add(userNumber);
 			System.out.print("Do you want to enter another another contact (yes / no)");
-			decision = scanner.next();
+			decision = scanner.nextLine();
 			}while(decision.equalsIgnoreCase("yes"));
 	}
 	
 
-	
+	}
 
 
 
