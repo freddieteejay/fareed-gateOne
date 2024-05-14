@@ -1,20 +1,27 @@
-import java.util.*;
+import java.util.Scanner;
+import java.util.ArrayList;
 public class PhoneBook{
 	public static void main(String... args){
 	Scanner scanner = new Scanner(System.in);
-	System.out.println("Welcome to My phone book");
+	
+	printPrompt();
+	addContact();
+
+	
+	}
+public void printPrompt(){
 	String prompt = "1. Add contact\n" +
                 "2. Remove contact\n" +
                 "3. Find contact by phone number\n" +
                 "4. Find contact by first name\n" +
                 "5. Find contact by last name\n" +
                 "6. Edit contact";
-	System.out.println(prompt);
-	int input = scanner.nextInt();
-	
-	ArrayList<String> contactName = new ArrayList<String>();
+
+	System.out.print(prompt);
+}
+public static String addContact(String contact){
+ArrayList<String> phoneBook = new ArrayList<String>();
 	ArrayList<String> contactNumber = new ArrayList<String>();
-	
 	if (input == 1){
 		String decision = " ";
 		do{
@@ -28,12 +35,5 @@ public class PhoneBook{
 			decision = scanner.next();
 			}while(decision.equalsIgnoreCase("yes"));
 	}
-	
-
-	
-
-
-
-
-	}
+}
 }
