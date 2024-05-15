@@ -18,7 +18,7 @@ def remove_contact():
 	print('contact not found')
 
 def find_contact_by_phone_number():
-	phone_number = input('Enter number you want to: ')
+	phone_number = input('Enter number you want to search: ')
 	for contact in contacts:
 		if contact[2] == phone_number:
 			print(f"Contact name: {contact[0]} {contact[1]}")
@@ -49,7 +49,7 @@ def edit_contact():
 	old_num = input("Enter the number you want to edit: ")
 	for contact in contacts:
 		if contact[2] == old_num:
-			new_first_name = input("Enter the new name: ")
+			new_first_name = input("Enter the new first name: ")
 			new_last_name = input("Enter the new last name: ")
 			new_number = input("Enter the new phone number: ")
 			contact[0] = new_first_name

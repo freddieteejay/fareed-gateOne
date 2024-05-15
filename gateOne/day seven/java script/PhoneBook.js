@@ -6,7 +6,7 @@ let firstName = prompt("Enter first name: ");
 let lastName = prompt("Enter last name: ");
 let phoneNumber = prompt("Enter phone number: ");
 contacts.push([firstName, lastName,phoneNumber]);
-console.log("contact saved successfully ");
+console.log("contact saved successfully ");kkk
 }
 
 function removeContact(){
@@ -42,7 +42,7 @@ let firstName = prompt("Enter first name you want to search: ");
 			return;
 		}
 	}
-			console.log(Contact not found);
+			console.log("Contact not found");
 }
 
 function findContactByLastName(){
@@ -54,7 +54,7 @@ let lastName  = prompt("Enter last name you want to search: ");
 			return;
 		}
 	}
-			console.log(Contact not found);
+			console.log("Contact not found");
 }
 
 function editContacts(){
@@ -72,12 +72,12 @@ let oldCon = prompt("Enter number you want to edit: ");
 		}
 	}
 		
-			console.log(Contact not found);
+			console.log("Contact not found");
 
 
 }
 
-While (true){
+while (true) {
 console.log("1. Add contact");
 console.log("2. remove contact");
 console.log("3. find contact by phone number");
@@ -90,13 +90,37 @@ let userInput = prompt("Choose an option: ");
 if (userInput === "1"){
 addContact();
 }
-if (userInput === "2")
+if (userInput === "2"){
+removeContact();
+}
+if (userInput === "3"){
+findNumberByPhoneNumber();
+}
+if (userInput === "4"){
+findContactByFirstName();
+}
+if (userInput === "5"){
+findContactByLastName();
+}
+if (userInput === "6"){
+editContact();
+}
+if (userInput === "7"){
+break;
+}
 
 
 
 
 
 }
+
+
+
+
+
+
+
 
 
 
