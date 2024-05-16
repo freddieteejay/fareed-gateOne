@@ -59,6 +59,9 @@ def edit_contact():
 			return
 	print("contact not found")
 
+def all_contact():
+	print(contacts)	
+
 while True:
 	print("1. Add contact")
 	print("2. remove contact")
@@ -66,7 +69,8 @@ while True:
 	print("4. find contact by first name")
 	print("5. find contact by last name")
 	print("6. Edit contact")
-	print("7. Exit")
+	print("7. All contact")
+	print("8. Exit")
 	user_input = input("Choose an option: ")
 
 	if user_input == "1":
@@ -82,7 +86,10 @@ while True:
 	elif user_input == "6":
 		edit_contact()
 	elif user_input == "7":
+		all_contact
+	elif user_input == "8":
 		break
+	
 
 		
 
