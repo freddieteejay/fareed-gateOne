@@ -40,7 +40,7 @@ public class PhoneBook{
 		}
 	}
 
-static void addContact(Scanner scanner){
+public static void addContact(Scanner scanner){
 System.out.print("Enter first name: ");
 String firstName = scanner.next();
 System.out.print("Enter last name: ");
@@ -54,7 +54,7 @@ System.out.println("Contact added successfully");
 System.out.println(" \n ");
 
 }
-static void removeContact(Scanner scanner){
+public static void removeContact(Scanner scanner){
 System.out.print("Enter phone number to remove: ");
 String phoneNumber = scanner.next();
 for(int count = 0; count < contacts.size(); count++){
@@ -68,7 +68,7 @@ for(int count = 0; count < contacts.size(); count++){
 System.out.println("Contact not found");
 System.out.println(" \n ");
 }
-static void findContactByPhoneNumber(Scanner scanner){
+public static void findContactByPhoneNumber(Scanner scanner){
 System.out.print("Enter phone number to search");
 String phoneNumber = scanner.next();
 for (String[] contact : contacts) {
@@ -83,7 +83,7 @@ System.out.println("Contact not found!");
 	System.out.println(" \n ");
     }
 
-static void findContactsByFirstName(Scanner scanner){
+public static void findContactsByFirstName(Scanner scanner){
 	System.out.print("Enter firstName");
 	String firstName = scanner.next();
 	for (String[] contact : contacts){
@@ -99,7 +99,7 @@ static void findContactsByFirstName(Scanner scanner){
 	System.out.println(" \n ");
 	}
 
-static void findContactByLastName(Scanner scanner){
+public static void findContactByLastName(Scanner scanner){
 System.out.print("Enter last name to search: ");
 String lastName = scanner.next();
 for(String[] contact : contacts){
@@ -114,7 +114,7 @@ System.out.print("contact not found");
 System.out.println(" \n ");
 
 }
-static void editContact(Scanner scanner){
+public static void editContact(Scanner scanner){
 System.out.println("Enter phone number you want to edit : ");
 String phoneNumber = scanner.next();
 for (int count = 0; count < contacts.size(); count++){
